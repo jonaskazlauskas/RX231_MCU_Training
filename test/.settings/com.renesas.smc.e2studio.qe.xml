@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QE>
+<Segment id="Pin">
+<Setting id="79" value="PD7"/>
+<Setting id="80" value="PD6"/>
+</Segment>
+<Segment id="Device">
+<Setting id="Series" value="RX200"/>
+<Setting id="Group" value="RX231"/>
+<Setting id="PartNo" value="R5F52318BxFP"/>
+<Setting id="PinCount" value="100"/>
+</Segment>
+<Segment id="Clock">
+<Setting id="UsbCLK" value="54000.0"/>
+<Setting id="PCLKD" value="27000.0"/>
+<Setting id="PCLKB" value="27000.0"/>
+<Setting id="CacHocoCLK" value="54000.0"/>
+<Setting id="VCC" value="3.3"/>
+<Setting id="BusCLK" value="27000.0"/>
+<Setting id="PCLKA" value="54000.0"/>
+<Setting id="ICLK" value="54000.0"/>
+<Setting id="CacLocoCLK" value="4000.0"/>
+<Setting id="FCLK" value="27000.0"/>
+<Setting id="SysCLKSrc" value="1.0"/>
+<Setting id="ExtCLK" value="8000.0"/>
+</Segment>
+<Segment id="Component">
+<Setting id="r_bsp" value="FIT"/>
+<Setting id="Config_PORT" value="CG"/>
+<Setting id="Config_CMT0" value="CG"/>
+</Segment>
+</QE>

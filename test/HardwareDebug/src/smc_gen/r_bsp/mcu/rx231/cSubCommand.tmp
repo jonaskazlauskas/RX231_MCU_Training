@@ -1,0 +1,11 @@
+-isa=rxv2
+-fpu
+-include="C:\PROGRA~2\RENESA~1\CS_~1\CC\CC-RX\V208~1.00\include","D:\RX231\test\src\smc_gen\r_bsp","D:\RX231\test\src\smc_gen\r_config","D:\RX231\test\src\smc_gen\Config_CMT0","D:\RX231\test\src\smc_gen\Config_PORT","D:\RX231\test\src\smc_gen\general","D:\RX231\test\src\smc_gen\r_pincfg"
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src/smc_gen/r_bsp/mcu/rx231"
+-debug
+-outcode=utf8
+-nologo 

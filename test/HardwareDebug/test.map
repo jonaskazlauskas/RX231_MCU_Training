@@ -1,0 +1,96 @@
+Renesas Optimizing Linker (W2.08.00 )             25-Oct-2018 21:00:19
+
+*** Options ***
+
+-subcommand=Linkertest.tmp
+-noprelink
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0.obj"
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx231\vecttbl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx231\mcu_startup.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-input=".\src\test.obj"
+-library=".\test.lib"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,C_1,C_2,C,C$*,D*,W*,L,P*/0FFF80000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-output="test.abs"
+-form=absolute
+-nomessage
+-vect=_undefined_interrupt_source_isr
+-list=test.map
+-nooptimize
+-rom=D=R,D_1=R_1,D_2=R_2
+-cpu=RAM=00000000-0000ffff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0008dfff,FIX=00090000-0009ffff,FIX=000a0000-000bffff,FIX=000c0000-000fffff,ROM=00100000-00101fff,FIX=007fc000-007fc4ff,FIX=007ffc00-007fffff,ROM=fff80000-ffffffff
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000142b        28   1
+R_1
+                                  0000142c  0000147b        50   1
+B_2
+                                  0000147c  00001485         a   2
+R_2
+                                  00001486  00001486         0   1
+B
+                                  00001488  00001a63       5dc   4
+R
+                                  00001a64  00001b5b        f8   4
+C_1
+                                  fff80000  fff80000         0   1
+C_2
+                                  fff80000  fff80007         8   2
+C
+                                  fff80008  fff8007f        78   4
+C$DSEC
+                                  fff80080  fff800a3        24   4
+C$BSEC
+                                  fff800a4  fff800bb        18   4
+C$VECT
+                                  fff800bc  fff804bb       400   4
+D
+                                  fff804bc  fff805b3        f8   4
+D_1
+                                  fff805b4  fff80603        50   1
+D_2
+                                  fff80604  fff80604         0   1
+W
+                                  fff80604  fff80604         0   1
+W_1
+                                  fff80604  fff80604         0   1
+W_2
+                                  fff80604  fff80604         0   1
+L
+                                  fff80604  fff80649        46   4
+P
+                                  fff8064a  fff81381       d38   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
